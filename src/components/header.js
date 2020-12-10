@@ -10,7 +10,7 @@ import logo from "../images/oneshopper-logo.png"
 
 
 const Header = ({ siteTitle }) => (
-  <header className="site-header">
+  <header className="site-header fixed-top">
     <SEO>
     </SEO>
     <div className="container">
@@ -22,16 +22,16 @@ const Header = ({ siteTitle }) => (
           <nav>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/">Accueil</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/blogs">Blogs</Link>
+                <Link className="nav-link" to="/blogs">Blog</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/store">Store</Link>
+                <Link className="nav-link" to="/store">Carte</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/about">A propos</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact-us">Contact</Link>
