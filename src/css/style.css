@@ -831,10 +831,10 @@ header nav ul.navbar-nav li {
   margin: 0 10px;
 }
 
-header nav ul.navbar-nav li a {
+/* header nav ul.navbar-nav li a {
   color: black;
   font-weight: 900;
-}
+} */
 
 header nav ul.navbar-nav li a:hover {
   color: #ce0a24;
@@ -842,7 +842,8 @@ header nav ul.navbar-nav li a:hover {
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {

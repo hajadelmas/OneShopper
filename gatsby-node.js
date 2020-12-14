@@ -5,6 +5,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     const StoreTemplate = path.resolve("src/templates/details.js")
     const BlogTemplate = path.resolve("src/templates/blogDetails.js")
+    const RestaurantTemplate = path.resolve("src/templates/restaurantDetails.js")
     resolve(
       graphql(`
         {
@@ -17,6 +18,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
           }
           allContentfulBlogs {
+            edges {
+              node {
+                id
+                slug
+              }
+            }
+          }
+          allContentfulRestaurant {
             edges {
               node {
                 id
@@ -42,6 +51,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage({
             path: data.node.slug,
             component: BlogTemplate,
+            context: {
+              slug: data.node.slug
+            }
+          });
+        });
+        result.data.allContentfulRestaurant.edges.forEach(data => {
+          createPage({
+            path: data.node.slug,
+            component: RestaurantTemplate,
             context: {
               slug: data.node.slug
             }

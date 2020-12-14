@@ -59,10 +59,10 @@ class IndexPost extends React.Component {
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
-                      <span className="">{items.node.price} €</span>
+                      <span className="indexPrice">{items.node.price} €</span>
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
-                      <a
+                      {/* <a
                         // href="#"
                         className="Product snipcart-add-item"
                         data-item-id={items.node.slug}
@@ -72,7 +72,7 @@ class IndexPost extends React.Component {
                         data-item-url={`/`}
                       >
                         <i className="fas fa-shopping-bag" />Add to Cart
-                    </a>
+                    </a> */}
                     </div>
                   </div>
                 </div>

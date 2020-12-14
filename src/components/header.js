@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "../css/font-awesome.css"
@@ -22,8 +23,8 @@ const Header = ({ siteTitle }) => (
                   <img
                       alt=""
                       src={logo}
-                      width="60"
-                      height="40"
+                      width="90"
+                      height="60"
                       className="m-0"
                   />
                   </Navbar.Brand>
@@ -32,19 +33,44 @@ const Header = ({ siteTitle }) => (
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto navTextStyle w-100">
-                        <Nav.Link href="/">Accueil</Nav.Link>
-                        <Nav.Link href="/blogs">Blog</Nav.Link>
-                        <Nav.Link href="/store">Carte</Nav.Link>
-                        <Nav.Link href="/Click">Click & Collect</Nav.Link>
-                        <NavDropdown title="Restaurants" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">restaurant 1</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">restaurant 2</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">restaurant 3</NavDropdown.Item>
+                        {/* <Nav.Link href="/">Accueil</Nav.Link> */}
+                        <Nav.Item>
+                          <Link to="/" className='nav-link'>Accueil</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Link to="/blogs" className='nav-link'>Blog</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Link to="/store" className='nav-link'>Carte</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Link to="/Click" className='nav-link'>Click & Collect</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Link to="/restaurants" className='nav-link'>Restaurants</Link>
+                        </Nav.Item>
+                        {/* <NavDropdown title="Restaurants" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">
+                              <Link to="/Click" className='nav-link'>restaurant 1</Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                              <Link to="/Click" className='nav-link'>restaurant 2</Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                              <Link to="/Click" className='nav-link'>restaurant 3</Link>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">restaurants</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="/about">A propos</Nav.Link>
-                        <Nav.Link href="/contact-us">Contact</Nav.Link>
+                            <NavDropdown.Item href="#action/3.4">
+                              <Link to="/Click" className='nav-link'>restaurants</Link>
+                            </NavDropdown.Item>
+                        </NavDropdown> */}
+                        <Nav.Item>
+                          <Link to="/about" className='nav-link'>A propos</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Link to="/contact-us" className='nav-link'>Contact</Link>
+                        </Nav.Item>
+              
                       </Nav>
                   </Navbar.Collapse>
                 </Col>
