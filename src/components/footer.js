@@ -22,7 +22,7 @@ class Footer extends Component {
                         </div>
                         <div className="footer-bottom social-right-menu ">
                             <div className="site-info">
-                                ©2019 Oneshopper. All rights reserved.
+                                © 2020 Le Churrasco. Tous droits réservés.
                             </div>
                         </div>
                     </div>

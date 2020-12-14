@@ -20,16 +20,16 @@ export default class Banner extends Component {
 
     return (
       <div className="slider-section">
-        <Slider {...settings}>
+        <Slider {...settings} className="contain-slick">
           {BannerData.map((items, i) => (
             <div key={i} className="item">
               <div className="site-Banner">
                 <Img sizes={items.node.image.fluid} />
                 <div className="Banner-details">
                   <div>
-                    <span className="sub-title">{items.node.subHeading}</span>
-                    <h1>{items.node.title}</h1>
-                    <Link to="/store">Shop Now</Link>
+                    {/* <span className="sub-title">{items.node.subHeading}</span> */}
+                    <h1 className='bannerTitle'>{items.node.title}</h1>
+                    <Link to="/store">La carte</Link>
                   </div>
                 </div>
               </div>

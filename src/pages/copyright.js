@@ -12,7 +12,7 @@ class Copyright extends React.Component {
                         <div className="row">
                             <div className="col-sm-12">
                                 <h2>Copyright</h2>
-                                <p>© 2019 Oneshopper. All rights reserved.</p>
+                                <p>© 2020 Le Churrasco. Tous droits réservés.</p>
                             </div>
                         </div>
                     </div>

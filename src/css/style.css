@@ -840,6 +840,15 @@ header nav ul.navbar-nav li a:hover {
   color: #ce0a24;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 900;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ce0a24;
+}
+
 /* header css */
 footer.site-footer {
   background: #ce0a24;
@@ -1032,7 +1041,8 @@ span.price {
 
 .site-Banner .Banner-details h1 {
   color: #fff;
-  font-size: 60px;
+  font-family: 'Guthen';
+  font-size: 110px;
   text-shadow: 6px 6px 7px #000;
 }
 
@@ -1087,6 +1097,8 @@ span.price {
 }
 
 .with-underline {
+  font-family: "guthen";
+  font-size: 60px;
   position: relative;
   text-align: left;
   display: inline-block;
@@ -1335,7 +1347,7 @@ ul.latest-blog li .inner a {
 }
 
 .Contact-us {
-  margin: 60px 0;
+  margin-top: 110px;
 }
 
 .Contact-us form {}
@@ -1471,8 +1483,15 @@ a.header-logo {
 }
 
 .site-footer.footer-content-width .container {
-  width: 100%
+  width: 100%;
 }
+
+/* .container.container-fluid {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+} */
 
 .site-footer .footer-bottom {
   position: relative;
@@ -1487,10 +1506,10 @@ a.header-logo {
   margin: 0
 }
 
-a.header-logo img {
+/* a.header-logo img {
   margin: 0;
-  width: 220px;
-}
+  width: 70px;
+} */
 
 .site-footer .menu-main-container {
   text-align: center
@@ -1524,30 +1543,67 @@ footer.site-footer ul {
 
 /* BannerOptions */
 
-.bannerOption1 {
-  height: 80vh;
+.bannerOptionRow {
   background-color: #ce0a24;
-  margin-bottom: 20px;
 }
 
-.bannerOption2 {
-  height: 80vh;
-  background-color: yellow;
-  margin-bottom: 20px;
+.bannerOptionGeneral {
+  /* height: 80vh; */
+  /* margin-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 4px solid black; */
+  /* background-color: black; */
+  text-align: center;
+  box-shadow: 0px 10px 13px -7px #000000;
+  background-color: white;
 }
 
-.bannerOption3 {
-  height: 80vh;
-  background-color: yellowgreen;
-  margin-bottom: 20px;
+/* .bannerOptionGeneral:hover {
+  transform: scale(.98)
+} */
+
+.bannerOptionGeneral h2{
+  font-family: 'Guthen', 'Cabin', sans-serif ;
+  font-size: 60px;
+  padding: 50px;
+  white-space: nowrap;
+  /* color: white; */
 }
 
+.bannerOptionGeneral_carre {
+  /* background-color: #ce0a24; */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
 
-
-
-
+.bannerOption_btn {
+  color: white;
+  background-color: black;
+  border: black;
+}
 
 /* BannerOptions */
+
+/* Site-Click */
+
+.site-click {
+  margin-top: 110px;
+}
+
+/* Site-Click */
+
+
+/* Site-Restaurants */
+
+.site-restaurants {
+  margin-top: 110px;
+}
+
+/* Site-Restaurants */
 
 
 /* Media Css */
@@ -1596,9 +1652,9 @@ footer.site-footer ul {
     text-align: left;
   }
 
-  a.header-logo img {
-    width: 160px;
-  }
+  /* a.header-logo img {
+    width: 70px;
+  } */
 
   header nav ul.navbar-nav {
     justify-content: left;
@@ -1638,10 +1694,10 @@ footer.site-footer ul {
     padding: 15px 0;
   }
 
-  a.header-logo {
+  /* a.header-logo {
     margin-bottom: 5px;
     display: block;
-  }
+  } */
 
   .site-footer .footer_inner {
     padding: 20px 0;
@@ -1735,6 +1791,17 @@ footer.site-footer ul {
     margin-top: 110px;
   }
 
+  .navbar_mobile {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  .bannerOptionGeneral {
+    margin-bottom: 20px;
+  }
+
 
 }
 
@@ -1743,4 +1810,13 @@ code {
   margin-bottom: 30px;
   display: block;
   padding: 20px 20px !important;
+}
+
+.indexPrice {
+  white-space: nowrap;
+}
+
+.navTextStyle {
+  display: flex;
+  justify-content: space-around;
 }

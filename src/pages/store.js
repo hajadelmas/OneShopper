@@ -63,7 +63,7 @@ class IndexPost extends React.Component {
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
                       <a
-                        href="#"
+                        // href="#"
                         className="Product snipcart-add-item"
                         data-item-id={items.node.slug}
                         data-item-price={items.node.price}

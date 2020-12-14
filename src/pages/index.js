@@ -16,7 +16,7 @@ class IndexPost extends React.Component {
     const { data } = this.props;
     return (
       <React.Fragment>
-        <div className="row product-main">
+        <div className="row product-main mb-5">
           {data.data.allContentfulProduct.edges.map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
               <div className="details_List">
@@ -35,7 +35,7 @@ class IndexPost extends React.Component {
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
-                      <span className="">{items.node.price} €</span>
+                      <span className="indexPrice">{items.node.price}€</span>
                     </div>
                     {/* <div className="col-sm-8 text-right align-self-center">
                       <a
@@ -66,9 +66,9 @@ const IndexPage = data => (
     <SEO title="Home" keywords={[`gatsby`, `oneshopper`, `react`, `Ecommerce`]} />
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
     <BannerOption />
-    <LatestBlogs data={data.data.allContentfulBlogs} />
+    <LatestBlogs data={data.data.allContentfulBlogs}/>
     <div className="container">
-      <div className="text-center"><h2 className="with-underline">Dernières recettes</h2></div>
+      <div className="text-center"><h2 className="with-underline">Nos plats au top</h2></div>
       <IndexPost data={data}></IndexPost>
     </div>
     <Countdown data={data.data.contentfulDealCountDown} />
