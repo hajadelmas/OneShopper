@@ -1089,8 +1089,12 @@ span.price {
   max-width: 70%;
 }
 
-.store-page .product-main {
+.store-page {
   margin-top: 110px;
+}
+
+.product-main {
+  margin-top: 30px;
 }
 
 .details-page .product-details {
