@@ -23,8 +23,8 @@ const Header = ({ siteTitle }) => (
                   <img
                       alt=""
                       src={logo}
-                      width="90"
-                      height="60"
+                      width="70"
+                      height="50"
                       className="m-0"
                   />
                   </Navbar.Brand>

@@ -25,11 +25,11 @@ const BlogDetails = data => (
                         <Img sizes={data.data.contentfulBlogs.author.photo.fixed} />
                         <strong className="name">{data.data.contentfulBlogs.author.name}</strong>
                     </div> */}
-                    {/* <div
+                    <div
                         dangerouslySetInnerHTML={{
-                            __html: data.data.contentfulBlogs.description.childMarkdownRemark.html
+                            __html: data.data.contentfulRestaurant.description.childMarkdownRemark.html
                         }}
-                    /> */}
+                    />
 
                 </div>
                 {/* <DiscussionEmbed

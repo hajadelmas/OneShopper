@@ -33,9 +33,9 @@ class Contact extends React.Component {
                                     </div>
                                 </form>
                             </Col>
-                            <Col className=''>
+                            {/* <Col className=''>
                                 <img src={Logo} alt='logo' />
-                            </Col>
+                            </Col> */}
                         </Row>
                         
                     </Container>

@@ -714,6 +714,14 @@ pre tt:after {
   font-family: 'Cabin', sans-serif;
 }
 
+.index_product {
+  padding: 30px;
+}
+
+/* .titlePage {
+  font-family: 'Guthen';
+} */
+
 .product-main .details_List .gatsby-image-wrapper {
   height: 200px;
 }
@@ -1015,12 +1023,12 @@ span.price {
 }
 
 .slick-dots li.slick-active button {
-  background: red;
+  background: #ce0a24;
 }
 
 .slick-list {
   overflow: hidden;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .site-Banner {
@@ -1040,10 +1048,17 @@ span.price {
   z-index: 1;
 }
 
+/* .Banner_details_style {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+} */
+
 .site-Banner .Banner-details h1 {
   color: #fff;
   font-family: 'Guthen';
   font-size: 110px;
+  font-weight: 500;
   text-shadow: 6px 6px 7px #000;
 }
 
@@ -1091,6 +1106,7 @@ span.price {
 
 .store-page {
   margin-top: 110px;
+  margin-bottom: 110px;
 }
 
 .product-main {
@@ -1104,6 +1120,8 @@ span.price {
 .with-underline {
   font-family: "guthen";
   font-size: 60px;
+  color: white;
+  font-weight: 400;
   position: relative;
   text-align: left;
   display: inline-block;
@@ -1111,7 +1129,19 @@ span.price {
   padding-bottom: 8px;
 }
 
-.with-underline:after {
+.with-underline2 {
+  font-family: "guthen";
+  font-size: 60px;
+  color: black;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 40px;
+  padding-bottom: 8px;
+}
+
+.with-underline:after, .with-underline2:after {
   content: "";
   position: absolute;
   height: 2px;
@@ -1275,6 +1305,11 @@ ul.blog-list li .post-item .post-details .post-title {
 ul.blog-list li .post-item .post-details .post-title a {
   color: #333;
   font-size: 28px;
+}
+
+.latestBlogPage {
+  background-color: black;
+  padding: 30px;
 }
 
 ul.latest-blog {
@@ -1591,6 +1626,11 @@ footer.site-footer ul {
   border: black;
 }
 
+.bannerOption_btn:hover {
+  background-color: #ce0a24;
+
+}
+
 /* BannerOptions */
 
 /* Site-Click */
@@ -1824,4 +1864,13 @@ code {
 .navTextStyle {
   display: flex;
   justify-content: space-around;
+}
+
+.carteStyle {
+  /* font-family: 'Guthen'; */
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  background-color: #ce0a24;
 }

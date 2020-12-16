@@ -8,11 +8,11 @@ export default class LatestBlogs extends Component {
         const { data } = this.props;
 
         return (
-            <div className="container">
+            <div className="container-fluid latestBlogPage pt-5" data-sal="slide-right" data-sal-delay="50" data-sal-easing="ease-out-sine">
                 <div className="text-center"><h2 className="with-underline">Articles a la une</h2></div>
                 <ul className="latest-blog">
                     {data.edges.map(items => (
-                        <li key={items.node.id}>
+                        <li key={items.node.id} data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-sine">
                             <div className="inner">
                                 <Link to={items.node.slug}></Link>
                                 <Img sizes={items.node.featureImage.fluid} />

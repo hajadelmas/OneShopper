@@ -43,37 +43,13 @@ class IndexPost extends React.Component {
 
     return (
       <React.Fragment>
-        {/* <div className="row product-main" onScroll={this.onScrollEvent}>
-          {data.data.platTags.edges.slice(0, NoOfPost).map(items => (
-            <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
-              <div className="details_List">
-                {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fixed} />}
-
-                <div className="details_inner">
-                  <h2>
-                    <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
-                  </h2>
-                  <StarRatingComponent
-                    name="rate1"
-                    starCount={5}
-                    value={items.node.rating}
-                  />
-                  <p>{items.node.details.childMarkdownRemark.excerpt}</p>
-                  <div className="row">
-                    <div className="col-sm-4 align-self-center">
-                      <span className="indexPrice">{items.node.price} €</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
+        <h1 className='text-center titlePage'>Découvrez notre carte !</h1>
+        <br />
 
         <Accordion defaultActiveKey="0">
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              Les Plats
+            <Accordion.Toggle as={Card.Header} className='carteStyle' eventKey="0">
+              Les plats
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
@@ -107,8 +83,8 @@ class IndexPost extends React.Component {
             </Accordion.Collapse>
           </Card>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
-              Les Desserts
+            <Accordion.Toggle as={Card.Header} className='carteStyle' eventKey="1">
+              Les desserts
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>

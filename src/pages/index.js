@@ -16,9 +16,9 @@ class IndexPost extends React.Component {
     const { data } = this.props;
     return (
       <React.Fragment>
-        <div className="row product-main mb-5">
+        <div className="row product-main">
           {data.data.allContentfulProduct.edges.map(items => (
-            <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
+            <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id} data-sal="slide-left" data-sal-delay="50" data-sal-easing="ease-out-sine">
               <div className="details_List">
                 {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fluid} />}
 
@@ -37,19 +37,6 @@ class IndexPost extends React.Component {
                     <div className="col-sm-4 align-self-center">
                       <span className="indexPrice">{items.node.price} €</span>
                     </div>
-                    {/* <div className="col-sm-8 text-right align-self-center">
-                      <a
-                        href="#"
-                        className="Product snipcart-add-item"
-                        data-item-id={items.node.slug}
-                        data-item-price={items.node.price}
-                        data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}
-                        data-item-name={items.node.name}
-                        data-item-url={`/`}
-                      >
-                        <i className="fas fa-shopping-bag" />Add to Cart
-                    </a>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -67,8 +54,8 @@ const IndexPage = data => (
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
     <BannerOption />
     <LatestBlogs data={data.data.allContentfulBlogs}/>
-    <div className="container">
-      <div className="text-center"><h2 className="with-underline">Nos plats au top</h2></div>
+    <div className="container index_product pt-5">
+      <div className="text-center" data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-sine"><h2 className="with-underline2">Nos plats au top</h2></div>
       <IndexPost data={data}></IndexPost>
     </div>
     <Countdown data={data.data.contentfulDealCountDown} />

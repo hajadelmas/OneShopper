@@ -37,9 +37,9 @@ const ProductDetails = data => (
         />
         <div className="row buynowinner">
           <div className="col-sm-2">
-            <span className="price">Price: ${data.data.contentfulProduct.price}</span>
+            <span className="price">Prix: {data.data.contentfulProduct.price}€</span>
           </div>
-          <div className="col-sm-10 text-left">
+          {/* <div className="col-sm-10 text-left">
             <a
               // href="#"
               className="Product snipcart-add-item"
@@ -52,7 +52,7 @@ const ProductDetails = data => (
               <i className="fas fa-tags" />
               Buy Now
             </a>
-          </div>
+          </div> */}
         </div>
         <div
           dangerouslySetInnerHTML={{
