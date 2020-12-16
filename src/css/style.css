@@ -781,6 +781,12 @@ pre tt:after {
 }
 
 /* header css */
+
+.navFix {
+  position: fixed;
+  white-space: nowrap;
+}
+
 header.site-header {
   width: 100%;
   background: white;
@@ -1601,10 +1607,6 @@ footer.site-footer ul {
   background-color: white;
 }
 
-/* .bannerOptionGeneral:hover {
-  transform: scale(.98)
-} */
-
 .bannerOptionGeneral h2{
   font-family: 'Guthen', 'Cabin', sans-serif ;
   font-size: 60px;
@@ -1651,8 +1653,14 @@ footer.site-footer ul {
 /* Site-Restaurants */
 
 
-/* Media Css */
+/* --------------------------------------- Media Css ---------------------------------------------- */
 @media (max-width:991px) {
+
+  .navFix {
+    position: initial;
+  }
+
+
   ul.latest-blog li:last-child {
     display: none;
   }
@@ -1692,6 +1700,12 @@ footer.site-footer ul {
 }
 
 @media (max-width:767px) {
+
+  body {
+    max-width: 100%;
+    /* overflow-X: hidden; */
+  }
+
   header.site-header .align-self-center {
     align-self: center !important;
     text-align: left;

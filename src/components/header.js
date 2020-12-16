@@ -14,9 +14,9 @@ const Header = ({ siteTitle }) => (
   <header className="site-header">
     <SEO>
     </SEO>
-    <Container>
+    <Container fluid>
         <Row>
-            <Navbar bg="white" expand="lg" fixed="top" className="p-1">
+            <Navbar bg="white" expand="lg" fixed='top' className="p-1">
                 {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
                 <Col md={2} xs={6}>
                   <Navbar.Brand href="/">
@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
                 <Col md={10} xs={6} className='navbar_mobile'>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
-                      <Nav className="mr-auto navTextStyle w-100">
+                      <Nav className="mr-auto navTextStyle w-100 d-flex justify-content-around">
                         {/* <Nav.Link href="/">Accueil</Nav.Link> */}
                         <Nav.Item>
                           <Link to="/" className='nav-link'>Accueil</Link>

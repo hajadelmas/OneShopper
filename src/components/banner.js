@@ -25,7 +25,7 @@ export default class Banner extends Component {
             <div key={i} className="item">
               <div className="site-Banner">
                 <Img sizes={items.node.image.fluid} />
-                <div className="Banner-details" data-sal="fade" data-sal-delay="300" data-sal-easing="ease">
+                <div className="Banner-details" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-out-sine">
                   <div className=''>
                     <span className="sub-title">{items.node.subHeading}</span>
                     <h1 className='bannerTitle'>{items.node.title}</h1>
