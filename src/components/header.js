@@ -1,23 +1,32 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from 'react';
+// import PropTypes from "prop-types"
+// import React from "react"
 import "../css/font-awesome.css"
 // import "bootstrap/dist/css/bootstrap.css"
+import { isMobile } from "react-device-detect";
+import MediaQuery from 'react-responsive'
+
 
 import SEO from "../components/seo"
 import logo from "../images/logo_churrasco.png"
-import { Container, Row, Col, Navbar, NavDropdown, Nav } from 'react-bootstrap'
+import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap'
 import "../css/style.css"
 
 
-const Header = ({ siteTitle }) => (
-  <header className="site-header">
+function Header () {
+
+  const [isShown, setIsShown] = useState(false);
+
+  return (
+    <header className="site-header">
     <SEO>
     </SEO>
     <Container fluid>
+
+      <MediaQuery maxDeviceWidth={1025}>
         <Row>
             <Navbar bg="white" expand="lg" fixed='top' className="p-1">
-                {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
                 <Col md={2} xs={6}>
                   <Navbar.Brand href="/">
                   <img
@@ -33,7 +42,6 @@ const Header = ({ siteTitle }) => (
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto navTextStyle w-100 d-flex justify-content-around">
-                        {/* <Nav.Link href="/">Accueil</Nav.Link> */}
                         <Nav.Item>
                           <Link to="/" className='nav-link'>Accueil</Link>
                         </Nav.Item>
@@ -49,21 +57,6 @@ const Header = ({ siteTitle }) => (
                         <Nav.Item>
                           <Link to="/restaurants" className='nav-link'>Restaurants</Link>
                         </Nav.Item>
-                        {/* <NavDropdown title="Restaurants" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">
-                              <Link to="/Click" className='nav-link'>restaurant 1</Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                              <Link to="/Click" className='nav-link'>restaurant 2</Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">
-                              <Link to="/Click" className='nav-link'>restaurant 3</Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                              <Link to="/Click" className='nav-link'>restaurants</Link>
-                            </NavDropdown.Item>
-                        </NavDropdown> */}
                         <Nav.Item>
                           <Link to="/about" className='nav-link'>A propos</Link>
                         </Nav.Item>
@@ -78,17 +71,80 @@ const Header = ({ siteTitle }) => (
                 
                 
         </Row>
+      </MediaQuery>
+      
+        
+
+      <MediaQuery minDeviceWidth={992}>
+        <Row>
+          <Col md={12} xs={12}>
+              <Navbar.Brand href="/" className='d-flex justify-content-center'>
+              <img
+                  alt=""
+                  src={logo}
+                  width="100"
+                  height="80"
+                  className="m-2"
+                  onMouseEnter={isMobile ? () => (false) : () => setIsShown(true)}
+              />
+              </Navbar.Brand>
+          </Col>
+        </Row>
+        
+        {isShown && (
+          <Row className='row_navbar_style'>
+            <Col md={12} xs={6} className='navbar_mobile'>
+              <Navbar expand='lg' className="navbar_style">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto navTextStyle w-100 d-flex justify-content-center" style={{transition: '0.6s' }}>
+                      <Nav.Item>
+                        <Link to="/" className='nav-link'>Accueil</Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Link to="/blogs" className='nav-link'>Blog</Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Link to="/store" className='nav-link'>Carte</Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Link to="/Click" className='nav-link'>Click & Collect</Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Link to="/restaurants" className='nav-link'>Restaurants</Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Link to="/about" className='nav-link'>A propos</Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Link to="/contact-us" className='nav-link'>Contact</Link>
+                      </Nav.Item>
+            
+                    </Nav>
+                </Navbar.Collapse>
+              </Navbar>
+            </Col>
+          </Row>
+        )}
+      </MediaQuery>
+        
+
+        
     </Container>
 
   </header >
-)
+  )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+
+  
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
+
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header

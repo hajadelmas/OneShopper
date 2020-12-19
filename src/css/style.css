@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap');
+
 @font-face {
   font-family: "Guthen";
   src: url("./Fonts/Guthen-Bloots.ttf");
 }
 
 html {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Barlow', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
 }
@@ -711,7 +713,7 @@ pre tt:after {
 
 
 * {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 .index_product {
@@ -762,14 +764,14 @@ pre tt:after {
 }
 
 .snipcart-add-item {
-  border: 1px solid #ef3d56;
+  border: 1px solid #FF4438;
   padding: 10px 15px;
   display: inline-block;
   font-size: 12px;
   color: #fff !important;
   border-radius: 5px;
   font-weight: 600;
-  background: #ef3d56;
+  background: #FF4438;
   text-decoration: none !important;
   text-transform: uppercase;
 }
@@ -791,7 +793,7 @@ header.site-header {
   width: 100%;
   background: white;
   z-index: 9;
-  padding: 10px 0;
+  /* padding-top: 10px; */
 }
 
 ul.navbar-nav.mr-auto li {
@@ -845,28 +847,34 @@ header nav ul.navbar-nav li {
   margin: 0 10px;
 }
 
-/* header nav ul.navbar-nav li a {
-  color: black;
-  font-weight: 900;
-} */
-
-header nav ul.navbar-nav li a:hover {
-  color: #ce0a24;
+.row_navbar_style {
+  background-color: #FF4438;
 }
 
+.navbar_style {
+  background-color: #FF4438;
+  padding: 0;
+}
+
+
+/* header nav ul.navbar-nav li a:hover {
+  color: #ce0a24;
+} */
+
 .navbar-light .navbar-nav .nav-link {
-  color: black;
-  font-weight: 600;
-  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ce0a24;
+  /* color: #FF4438; */
+  /* border-bottom: 1px solid white; */
 }
 
 /* header css */
 footer.site-footer {
-  background: #ce0a24;
+  background: #FF4438;
   padding: 0;
   text-align: center;
 }
@@ -877,7 +885,7 @@ footer.site-footer * {
 
 .no-image {
   height: 200px;
-  background: #ef3d5675;
+  background: #FF4438;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -907,7 +915,7 @@ footer.site-footer * {
 }
 
 .snip-layout .snip-header__total * {
-  color: #ef3d56 !important;
+  color: #FF4438 !important;
   text-transform: capitalize !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
@@ -927,7 +935,7 @@ footer.site-footer * {
 }
 
 .snip-layout .snip-actions a.snip-btn:hover {
-  background: #ef3d56 !important;
+  background: #FF4438 !important;
 }
 
 .product-details .gatsby-image-wrapper {
@@ -1029,7 +1037,7 @@ span.price {
 }
 
 .slick-dots li.slick-active button {
-  background: #ce0a24;
+  background: #FF4438;
 }
 
 .slick-list {
@@ -1063,8 +1071,8 @@ span.price {
 .site-Banner .Banner-details h1 {
   color: #fff;
   font-family: 'Guthen';
-  font-size: 110px;
-  font-weight: 500;
+  font-size: 90px;
+  font-weight: 200;
   text-shadow: 6px 6px 7px #000;
 }
 
@@ -1093,11 +1101,11 @@ span.price {
 .site-Banner .Banner-details .sub-title {
   color: #fff;
   text-shadow: 2px 2px 3px #000;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .site-Banner .Banner-details a {
-  background: #ef3d56;
+  background: #FF4438;
   color: #fff;
   text-decoration: none;
   padding: 12px 25px;
@@ -1154,7 +1162,7 @@ span.price {
   width: 100%;
   left: 0;
   right: 0;
-  background: #ef3d56;
+  background: #FF4438;
   top: 100%;
 }
 
@@ -1205,7 +1213,7 @@ span.price {
 }
 
 .countdown-section .countdown-inner a {
-  background: #ef3d56;
+  background: #FF4438;
   color: #fff;
   text-decoration: none;
   padding: 12px 25px;
@@ -1221,7 +1229,7 @@ span.price {
 }
 
 .countdown-section .countdown-inner ul.react-countdown li {
-  background: #ef3d5694;
+  background: #FF4438;
   padding: 20px 0;
   margin: 0 10px;
   width: 100px;
@@ -1480,7 +1488,7 @@ div#disqus_thread {
   box-sizing: border-box;
   text-shadow: none;
   color: #333;
-  border-top: 4px solid #ef3d56;
+  border-top: 4px solid #FF4438;
 }
 
 .countdown-section .countdown-inner .date strong i {
@@ -1590,7 +1598,7 @@ footer.site-footer ul {
 /* BannerOptions */
 
 .bannerOptionRow {
-  background-color: #ce0a24;
+  background-color: #FF4438;
 }
 
 .bannerOptionGeneral {
@@ -1608,7 +1616,7 @@ footer.site-footer ul {
 }
 
 .bannerOptionGeneral h2{
-  font-family: 'Guthen', 'Cabin', sans-serif ;
+  font-family: 'Guthen', 'Barlow', sans-serif ;
   font-size: 60px;
   padding: 50px;
   white-space: nowrap;
@@ -1629,7 +1637,7 @@ footer.site-footer ul {
 }
 
 .bannerOption_btn:hover {
-  background-color: #ce0a24;
+  background-color: #FF4438;
 
 }
 
@@ -1881,10 +1889,9 @@ code {
 }
 
 .carteStyle {
-  /* font-family: 'Guthen'; */
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
-  background-color: #ce0a24;
+  background-color: #FF4438;
 }

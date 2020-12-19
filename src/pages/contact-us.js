@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { Container, Row, Col } from 'react-bootstrap'
-import Logo from '../images/logo_churrasco.png'
+// import Logo from '../images/logo_churrasco.png'
 
 class Contact extends React.Component {
     render() {
