@@ -75,7 +75,7 @@ function Header () {
       
         
 
-      <MediaQuery minDeviceWidth={992}>
+      <MediaQuery minDeviceWidth={1026}>
         <Row>
           <Col md={12} xs={12}>
               <Navbar.Brand href="/" className='d-flex justify-content-center'>

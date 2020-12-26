@@ -12,6 +12,9 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 
+import CookieConsent from 'react-cookie-consent';
+
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -29,6 +32,13 @@ const Layout = ({ children }) => (
         <div>
           <main>{children}</main>
         </div>
+        <CookieConsent
+          location="bottom"
+          buttonText="J'accepte"
+          declineButtonText="Je refuse"
+          cookieName="gatsby-gdpr-google-analytics">
+          Nous utilisons des cookies pour nous permettre de mieux comprendre comment le site est utilisé. En continuant à utiliser ce site, vous acceptez cette politique.
+        </CookieConsent>
         <Footer />
       </>
     )}

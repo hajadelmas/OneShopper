@@ -717,7 +717,8 @@ pre tt:after {
 }
 
 .index_product {
-  padding: 30px;
+  padding: 30px 110px;
+  background-color: black;
 }
 
 /* .titlePage {
@@ -740,6 +741,7 @@ pre tt:after {
   -o-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
   border: 1px solid #cccccc73;
+  background-color: white;
 }
 
 .product-main .details_List:hover {
@@ -1040,6 +1042,7 @@ span.price {
   background: #FF4438;
 }
 
+
 .slick-list {
   overflow: hidden;
   /* margin-bottom: 30px; */
@@ -1114,6 +1117,10 @@ span.price {
   letter-spacing: 1px;
 }
 
+.site-Banner .Banner-details a:hover {
+  background: #00B05B;
+}
+
 .site-Banner .Banner-details>div {
   max-width: 70%;
 }
@@ -1134,7 +1141,7 @@ span.price {
 .with-underline {
   font-family: "guthen";
   font-size: 60px;
-  color: white;
+  color: black;
   font-weight: 400;
   position: relative;
   text-align: left;
@@ -1146,7 +1153,7 @@ span.price {
 .with-underline2 {
   font-family: "guthen";
   font-size: 60px;
-  color: black;
+  color: white;
   font-weight: 400;
   position: relative;
   text-align: left;
@@ -1322,7 +1329,7 @@ ul.blog-list li .post-item .post-details .post-title a {
 }
 
 .latestBlogPage {
-  background-color: black;
+  /* background-color: black; */
   padding: 30px;
 }
 
@@ -1617,8 +1624,8 @@ footer.site-footer ul {
 
 .bannerOptionGeneral h2{
   font-family: 'Guthen', 'Barlow', sans-serif ;
-  font-size: 60px;
-  padding: 50px;
+  font-size: 40px;
+  padding: 30px;
   white-space: nowrap;
   /* color: white; */
 }
@@ -1637,7 +1644,7 @@ footer.site-footer ul {
 }
 
 .bannerOption_btn:hover {
-  background-color: #FF4438;
+  background-color: #00B05B;
 
 }
 
@@ -1749,6 +1756,10 @@ footer.site-footer ul {
 
   .navbar-nav .nav-link {
     font-size: 14px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
   }
 
   .header-cart {
@@ -1867,6 +1878,11 @@ footer.site-footer ul {
 
   .bannerOptionGeneral {
     margin-bottom: 20px;
+  }
+
+  .index_product {
+    padding: 30px;
+    background-color: black;
   }
 
 

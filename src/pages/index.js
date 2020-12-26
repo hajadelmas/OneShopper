@@ -11,6 +11,7 @@ import { graphql } from "gatsby";
 
 import BannerOption from "../components/BannerOption"
 
+
 class IndexPost extends React.Component {
   render() {
     const { data } = this.props;
@@ -53,11 +54,12 @@ const IndexPage = data => (
     <SEO title="Home" keywords={[`gatsby`, `oneshopper`, `react`, `Ecommerce`]} />
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
     <BannerOption />
-    <LatestBlogs data={data.data.allContentfulBlogs}/>
-    <div className="container index_product pt-5">
+    
+    <div className="container-fluid index_product pt-5">
       <div className="text-center" data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-sine"><h2 className="with-underline2">Nos plats au top</h2></div>
       <IndexPost data={data}></IndexPost>
     </div>
+    <LatestBlogs data={data.data.allContentfulBlogs}/>
     <Countdown data={data.data.contentfulDealCountDown} />
   </Layout>
 )
