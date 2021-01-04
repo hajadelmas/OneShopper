@@ -1941,3 +1941,14 @@ code {
   justify-content: center;
   background-color: #FF4438;
 }
+
+
+.loadingPage {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}

@@ -8,3 +8,9 @@
 
 import './node_modules/bootstrap/dist/css/bootstrap.css'
 import './src/css/style.css'
+
+export const onInitialClientRender = () => {
+    setTimeout(function() {
+        document.getElementById("___loader").style.display = "none"
+    }, 3000)
+}
