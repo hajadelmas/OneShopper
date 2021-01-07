@@ -46,7 +46,7 @@ class IndexPost extends React.Component {
         <h1 className='text-center titlePage'>Découvrez notre carte !</h1>
         <br />
 
-        <Accordion defaultActiveKey="0">
+        {/* <Accordion defaultActiveKey="0">
           <Card>
             <Accordion.Toggle as={Card.Header} className='carteStyle' eventKey="0">
               Les plats
@@ -117,7 +117,7 @@ class IndexPost extends React.Component {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-        </Accordion>
+        </Accordion> */}
 
 
       </React.Fragment>

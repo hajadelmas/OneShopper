@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React, { Component } from 'react'
-import { Button } from 'react-bootstrap'
+// import { Button } from 'react-bootstrap'
 
 export default class BannerOption extends Component {
     render() {

@@ -22,6 +22,9 @@ function Header () {
     <header className="site-header">
     <SEO>
     </SEO>
+    <div className='row_banner_green'>
+        <h4 className='banner_green'>Special menus et livraisons pendant cette période de crise. Pour suivre toutes les dernières infos, rendez-vous sur la partie blog ici. Bonne dégustation !</h4>
+    </div>
     <Container fluid>
 
       <MediaQuery maxDeviceWidth={1025}>
@@ -126,6 +129,15 @@ function Header () {
             </Col>
           </Row>
         )}
+        {/* <Row>
+          <Col className='p-0 m-0'>
+            <div className='banner_under_nav'>
+              <h3>Bienvenue sur le site officiel du Churrasco</h3>
+              <p>Retrouvez notre carte, nos promotions et dernières informations concernant vos restaurants favoris</p>
+              <p>Toutes les informations relatives au COVID sont ici.</p>
+            </div>
+          </Col>
+        </Row> */}
       </MediaQuery>
         
 
