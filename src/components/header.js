@@ -23,7 +23,7 @@ function Header () {
     <SEO>
     </SEO>
     <div className='row_banner_green'>
-        <h4 className='banner_green'>Special menus et livraisons pendant cette période de crise. Pour suivre toutes les dernières infos, rendez-vous sur la partie blog ici. Bonne dégustation !</h4>
+      <h4 className='banner_green'>Special menus et livraisons pendant cette période de crise. Pour suivre toutes les dernières infos, rendez-vous sur la partie blog ici. Bonne dégustation !</h4>
     </div>
     <Container fluid>
 

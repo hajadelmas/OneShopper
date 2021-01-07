@@ -1741,6 +1741,10 @@ footer.site-footer ul {
 
 @media (max-width:1025px) {
 
+  .row_banner_green {
+    margin-top: 60px;
+  }
+
   .navFix {
     position: initial;
   }
