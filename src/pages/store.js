@@ -8,12 +8,12 @@ import { graphql } from "gatsby";
 
 import { Accordion, Card, Container, Row, Col } from "react-bootstrap"
 
-import Menu1 from '../images/01 - Menuboard TV 1 BÊTA.jpg'
-import Menu2 from '../images/02 - Menuboard TV 1 BÊTA.jpg'
-import Menu3 from '../images/03 - Menuboard TV 2 BÊTA.jpg'
-import Menu4 from '../images/03 - Menuboard TV 3BÊTA.jpg'
-import Menu5 from '../images/04 - Menuboard TV 3BÊTA.jpg'
-import Menu6 from '../images/05 - Menuboard TV 3BÊTA.jpg'
+import Menu1 from '../images/01-Menuboard.jpg'
+import Menu2 from '../images/02-Menuboard.jpg'
+import Menu3 from '../images/03-Menuboard.jpg'
+import Menu4 from '../images/04-Menuboard.jpg'
+import Menu5 from '../images/05-Menuboard.jpg'
+import Menu6 from '../images/06-Menuboard.jpg'
 
 class IndexPost extends React.Component {
   constructor(props) {
