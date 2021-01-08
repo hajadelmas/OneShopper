@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
+import LogoBanner from '../images/logo-banner-white.png'
 
 var settings = {
   dots: true,
@@ -20,22 +21,27 @@ export default class Banner extends Component {
 
     return (
       <div className="slider-section">
-        <Slider {...settings} className="contain-slick">
+        {/* <Slider {...settings} className="contain-slick"> */}
           {BannerData.map((items, i) => (
             <div key={i} className="item">
               <div className="site-Banner">
                 <Img sizes={items.node.image.fluid} />
-                <div className="Banner-details" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-out-sine">
+                <div className="Banner-details">
                   <div className=''>
                     {/* <span className="sub-title">{items.node.subHeading}</span> */}
-                    <h1 className='bannerTitle'>{items.node.title}</h1>
-                    <Link to="/store">La carte</Link>
+                    {/* <h1 className='bannerTitle'>{items.node.title}</h1> */}
+                    <img src={LogoBanner} className='w-75' />
+                    <div className='Banner-details-button d-flex justify-content-between'>
+                      <Link to="/store">La carte</Link>
+                      <Link to="/Click">Commander</Link>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
           ))}
-        </Slider>
+        {/* </Slider> */}
       </div>
     );
   }

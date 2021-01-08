@@ -278,7 +278,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem
+  margin-bottom: 0;
 }
 
 h1 {
@@ -805,6 +805,10 @@ header.site-header {
   /* padding-top: 10px; */
 }
 
+.navbar {
+  padding: 0;
+}
+
 ul.navbar-nav.mr-auto li {
   margin-bottom: 0;
 }
@@ -871,9 +875,10 @@ header nav ul.navbar-nav li {
 } */
 
 .navbar-light .navbar-nav .nav-link {
-  color: white;
+  font-family: 'Chinese';
+  color: black;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -1060,16 +1065,17 @@ span.price {
   position: relative;
 }
 
-.site-Banner .Banner-details {
+.Banner-details img{
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: 1110px !important;
-  max-width: 90%;
-  z-index: 1;
+  /* width: 1110px !important; */
+  max-width: 40%;
+  z-index: 0.5;
 }
 
 /* .Banner_details_style {
@@ -1095,7 +1101,7 @@ span.price {
   margin: 0;
 }
 
-.slick-slider .slick-list .site-Banner:before {
+.slick-slider .slick-list {
   content: "";
   background: #0000004a;
   position: absolute;
@@ -1114,8 +1120,13 @@ span.price {
   font-size: 25px;
 }
 
-.site-Banner .Banner-details a {
-  background: #FF4438;
+.Banner-details a {
+  /* background: #FF4438; */
+  /* position: absolute;
+  bottom: 15%; */
+  font-family: 'chinese';
+  font-size: 25px;
+  border: 1px solid white;
   color: #fff;
   text-decoration: none;
   padding: 12px 25px;
@@ -1124,13 +1135,24 @@ span.price {
   letter-spacing: 1px;
 }
 
+.Banner-details-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 70%;
+}
+
 .site-Banner .Banner-details a:hover {
   background: #00B05B;
 }
 
-.site-Banner .Banner-details>div {
-  max-width: 70%;
-}
+/* .Banner-details>div {
+  max-width: 50%;
+} */
 
 .store-page {
   margin-top: 110px;
@@ -1422,7 +1444,7 @@ ul.latest-blog li .inner a {
 }
 
 .site-Banner .gatsby-image-wrapper {
-  height: 500px;
+  height: 91vh;
 }
 
 .Contact-us {
@@ -1796,6 +1818,15 @@ footer.site-footer ul {
     color: black;
   }
 
+  .Banner-details img {
+    top: 40%;
+    max-width: 70%;
+  }
+
+  .Banner-details-button {
+    top: 80%;
+  }
+
 
 
 }
@@ -1891,7 +1922,16 @@ footer.site-footer ul {
   }
 
   .site-Banner .gatsby-image-wrapper {
-    height: 350px;
+    height: 80vh;
+  }
+
+  .Banner-details img {
+    top: 40%;
+    max-width: 80%;
+  }
+
+  .Banner-details-button {
+    top: 80%;
   }
 
   .store-page {

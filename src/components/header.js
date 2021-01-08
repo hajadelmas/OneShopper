@@ -16,15 +16,12 @@ import "../css/style.css"
 
 function Header () {
 
-  const [isShown, setIsShown] = useState(false);
+  // const [isShown, setIsShown] = useState(false);
 
   return (
     <header className="site-header">
     <SEO>
     </SEO>
-    <div className='row_banner_green'>
-      <h4 className='banner_green'>Special menus et livraisons pendant cette période de crise. Pour suivre toutes les dernières infos, rendez-vous sur la partie blog ici. Bonne dégustation !</h4>
-    </div>
     <Container fluid>
 
       <MediaQuery maxDeviceWidth={1025}>
@@ -48,18 +45,18 @@ function Header () {
                         <Nav.Item>
                           <Link to="/" className='nav-link'>Accueil</Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        {/* <Nav.Item>
                           <Link to="/blogs" className='nav-link'>Blog</Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
                         <Nav.Item>
-                          <Link to="/store" className='nav-link'>Carte</Link>
+                          <Link to="/store" className='nav-link'>La Carte</Link>
                         </Nav.Item>
                         <Nav.Item>
                           <Link to="/Click" className='nav-link'>Click & Collect</Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        {/* <Nav.Item>
                           <Link to="/restaurants" className='nav-link'>Restaurants</Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
                         <Nav.Item>
                           <Link to="/about" className='nav-link'>A propos</Link>
                         </Nav.Item>
@@ -79,7 +76,7 @@ function Header () {
         
 
       <MediaQuery minDeviceWidth={1026}>
-        <Row>
+        {/* <Row>
           <Col md={12} xs={12}>
               <Navbar.Brand href="/" className='d-flex justify-content-center'>
               <img
@@ -88,13 +85,12 @@ function Header () {
                   width="100"
                   height="80"
                   className="m-2"
-                  onMouseEnter={isMobile ? () => (false) : () => setIsShown(true)}
+                  // onMouseEnter={isMobile ? () => (false) : () => setIsShown(true)}
               />
               </Navbar.Brand>
           </Col>
         </Row>
         
-        {isShown && (
           <Row className='row_navbar_style'>
             <Col md={12} xs={6} className='navbar_mobile'>
               <Navbar expand='lg' className="navbar_style">
@@ -127,17 +123,43 @@ function Header () {
                 </Navbar.Collapse>
               </Navbar>
             </Col>
-          </Row>
-        )}
-        {/* <Row>
-          <Col className='p-0 m-0'>
-            <div className='banner_under_nav'>
-              <h3>Bienvenue sur le site officiel du Churrasco</h3>
-              <p>Retrouvez notre carte, nos promotions et dernières informations concernant vos restaurants favoris</p>
-              <p>Toutes les informations relatives au COVID sont ici.</p>
-            </div>
-          </Col>
-        </Row> */}
+          </Row> */}
+
+
+        <Navbar bg="" expand="lg" className=''>
+          <Navbar.Brand href="/" className='d-flex'>
+                <img
+                    alt=""
+                    src={logo}
+                    width="80"
+                    height="60"
+                    className=""
+                />
+          </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="w-100 d-flex justify-content-around align-content-end">
+                <Nav.Item>
+                  <Link to="/" className='nav-link'>Accueil</Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Link to="/store" className='nav-link'>La Carte</Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Link to="/Click" className='nav-link'>Click & Collect</Link>
+                </Nav.Item>
+                {/* <Nav.Item>
+                  <Link to="/restaurants" className='nav-link'>Restaurants</Link>
+                </Nav.Item> */}
+                <Nav.Item>
+                  <Link to="/about" className='nav-link'>A propos</Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Link to="/contact-us" className='nav-link'>Contact</Link>
+                </Nav.Item>
+              </Nav>
+            </Navbar.Collapse>
+        </Navbar>
       </MediaQuery>
         
 
