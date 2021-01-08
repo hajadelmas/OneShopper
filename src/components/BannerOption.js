@@ -24,7 +24,7 @@ export default class BannerOption extends Component {
                     <div className="col-lg-3 col-sm-12 col-md-6 bannerOptionGeneral" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-sine">
                         <h2>Notre carte</h2>
                         <div className='bannerOptionGeneral_carre'>
-                            <p>Nos plats en vogue, les meilleurs desserts, pourquoi nos entrées sont si bonnes ? Retrouvez toute la carte en cliant sur le bouton ci dessous. </p>
+                            <p>Nos plats en vogue, les meilleurs desserts, pourquoi nos entrées sont si bonnes ? Retrouvez toute la carte en cliquant sur le bouton ci dessous. </p>
                             <Link to='/store'>Notre carte</Link>
                         </div>
                     </div>
