@@ -126,7 +126,7 @@ function Header () {
           </Row> */}
 
 
-        <Navbar bg="" expand="lg" className=''>
+        <Navbar bg="" expand="lg">
           <Navbar.Brand href="/" className='d-flex'>
                 <img
                     alt=""

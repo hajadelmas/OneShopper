@@ -23,7 +23,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FF4438;
+  /* background-color: #FF4438; */
 }
 
 article,
@@ -874,6 +874,11 @@ header nav ul.navbar-nav li {
   color: #ce0a24;
 } */
 
+.nav-item:hover {
+  background-image: url('../images/back-title-nav.png');
+  background-size: cover;
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Chinese';
   color: black;
@@ -1060,10 +1065,31 @@ span.price {
   /* margin-bottom: 30px; */
 }
 
+.parallax-perso {
+  background-image: url('../images/background-main.jpg');
+
+  /* Set a specific height */
+  height: 89vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .site-Banner {
   width: 100%;
   position: relative;
 }
+
+.site-Banner .gatsby-image-wrapper {
+  height: 89vh;
+}
+
+/* .site-Banner img {
+  max-width: 100%;
+} */
 
 .Banner-details img{
   position: absolute;
@@ -1073,10 +1099,22 @@ span.price {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  /* width: 1110px !important; */
   max-width: 40%;
   z-index: 0.5;
 }
+
+/* .Banner-details img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 1110px !important;
+  max-width: 40%;
+  z-index: 0.5;
+} */
 
 /* .Banner_details_style {
   display: flex;
@@ -1443,9 +1481,9 @@ ul.latest-blog li .inner a {
   z-index: 5;
 }
 
-.site-Banner .gatsby-image-wrapper {
-  height: 91vh;
-}
+/* .site-Banner .gatsby-image-wrapper {
+  height: 89vh;
+} */
 
 .Contact-us {
   margin-top: 110px;
@@ -1667,9 +1705,36 @@ footer.site-footer ul {
 
 /* BannerOptions */
 
-.bannerOptionRow {
-  background-color: #FF4438;
+.bannerOption_Background {
+  position: relative;
+  background-image: url('../images/banniereStyleOption.png');
+  background-size: contain;
+  padding: ;
 }
+
+.svg1 {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.svg2 {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  transform: scale(-1, -1);
+
+}
+
+
+
+/* .bannerOptionRow {
+  background-color: #FF4438;
+} */
 
 .bannerOptionGeneral {
   display: flex;
@@ -1824,9 +1889,8 @@ footer.site-footer ul {
   }
 
   .Banner-details-button {
-    top: 80%;
+    top: 70%;
   }
-
 
 
 }
@@ -1919,6 +1983,7 @@ footer.site-footer ul {
   .site-Banner .Banner-details a {
     padding: 10px 15px;
     font-size: 14px;
+    white-space: nowrap;
   }
 
   .site-Banner .gatsby-image-wrapper {
@@ -1931,7 +1996,10 @@ footer.site-footer ul {
   }
 
   .Banner-details-button {
-    top: 80%;
+    top: 70%;
+    flex-direction: column;
+    height: 20%;
+    text-align: center;
   }
 
   .store-page {
@@ -2023,6 +2091,14 @@ footer.site-footer ul {
     font-size: 40px;
   }
 
+  .svg1 {
+    top: -98px;
+  }
+
+  .svg2 {
+    bottom: -99px;
+  }
+
 
 }
 
@@ -2059,4 +2135,16 @@ code {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+/* @media (max-width: 699px) {
+  .svg--lg {
+    display: none;
+  }
+} */
+
+@media (min-width: 700px) {
+  .svg--sm {
+    display: none;
+  }
 }
