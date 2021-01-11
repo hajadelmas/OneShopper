@@ -31,7 +31,7 @@ export default class Banner extends Component {
           <div className="Banner-details">
             <img src={LogoBanner} className='w-75' />
             <div className='Banner-details-button d-flex justify-content-between'>
-              <Link to="/store">La carte</Link>
+              <Link to="/store" className=''>La carte</Link>
               <Link to="/Click">Commander</Link> 
             </div>           
           </div>
