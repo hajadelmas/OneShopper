@@ -6,7 +6,7 @@ class Footer extends Component {
         return (
             <footer className="site-footer">
                 <div className="footer_inner">
-                    <div className="container">
+                    <div className="container svg_contain">
                         <div className="footer-widget footer-content">
                             <section id="nav_menu-8" className="widget widget_nav_menu">
                                 <div className="menu-main-container">

@@ -726,7 +726,10 @@ pre tt:after {
 .index_product {
   padding: 30px 110px;
   background-color: black;
+  background-image: url('../images/banner-about.png');
+  background-size: cover;
 }
+
 
 /* .titlePage {
   font-family: 'Guthen';
@@ -734,6 +737,28 @@ pre tt:after {
 
 .product-main .details_List .gatsby-image-wrapper {
   height: 200px;
+}
+
+.product-main {
+  margin: 30px 0;
+  /* height: 55vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_main_back {
+  height: 70%;
+  width: 60%;
+  padding: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.product_main_back h3 {
+  font-family: 'chinese';
+  font-size: 30px;
 }
 
 .img {
@@ -1198,10 +1223,6 @@ span.price {
   margin-bottom: 110px;
 }
 
-.product-main {
-  margin-top: 30px;
-}
-
 .details-page .product-details {
   margin-top: 30px;
 }
@@ -1226,7 +1247,7 @@ span.price {
   position: relative;
   text-align: left;
   display: inline-block;
-  margin-bottom: 40px;
+  margin: 60px 0;
   padding-bottom: 8px;
 }
 
@@ -1241,16 +1262,16 @@ span.price {
   top: 100%;
 }
 
-/* .with-underline:after {
+.with-underline:after {
   content: "";
   position: absolute;
   height: 2px;
   width: 100%;
   left: 0;
   right: 0;
-  background: white;
+  background: red;
   top: 100%;
-} */
+}
 
 /* slider css */
 .countdown-section {
@@ -1408,8 +1429,14 @@ ul.blog-list li .post-item .post-details .post-title a {
 }
 
 .latestBlogPage {
-  /* background-color: black; */
+  background-color: #00B05B;
   padding: 30px;
+  height: 60vh;
+  position: relative;
+}
+
+.latestBlogPage svg {
+  fill: #00B05B;
 }
 
 ul.latest-blog {
@@ -2005,6 +2032,29 @@ footer.site-footer ul {
 
   .store-page {
     margin-top: 110px;
+  }
+
+  .product-main {
+    position: relative;
+    margin: 30px 0;
+    /* height: 55vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product_main_back {
+    height: 70%;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .product_main_back h3 {
+    font-family: 'chinese';
+    font-size: 30px;
   }
 
   .product-main .details_List .details_inner h2 {

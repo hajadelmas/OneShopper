@@ -12,6 +12,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import { graphql } from "gatsby";
 
 import BannerOption from "../components/BannerOption"
+import { Col } from 'react-bootstrap'
 
 
 class IndexPost extends React.Component {
@@ -20,7 +21,15 @@ class IndexPost extends React.Component {
     return (
       <React.Fragment>
         <div className="row product-main">
-          {data.data.allContentfulProduct.edges.map(items => (
+          <div className='product_main_back'>
+            <h3>2015 - Lancement de l'aventure</h3>
+            <p>Reprehenderit ex pariatur sunt sunt occaecat anim et eiusmod Lorem labore officia qui pariatur pariatur. Nulla cillum dolor officia esse fugiat eiusmod in. Aliqua excepteur quis irure mollit. Labore magna reprehenderit id laboris do dolor velit dolor sit. Eu ad velit reprehenderit eiusmod ut esse nisi ea incididunt eu ullamco anim. Ullamco dolore anim incididunt sint ipsum ea in voluptate irure sit deserunt.</p>
+            <br></br>
+            <h3>2017 - le début d'un belle histoire</h3>
+            <p>Reprehenderit ex pariatur sunt sunt occaecat anim et eiusmod Lorem labore officia qui pariatur pariatur. Nulla cillum dolor officia esse fugiat eiusmod in. Aliqua excepteur quis irure mollit. Labore magna reprehenderit id laboris do dolor velit dolor sit. Eu ad velit reprehenderit eiusmod ut esse nisi ea incididunt eu ullamco anim. Ullamco dolore anim incididunt sint ipsum ea in voluptate irure sit deserunt.</p>
+          </div>
+          
+          {/* {data.data.allContentfulProduct.edges.map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id} data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-out-sine">
               <div className="details_List">
                 {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fluid} />}
@@ -44,7 +53,7 @@ class IndexPost extends React.Component {
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </React.Fragment>
     );
@@ -58,11 +67,14 @@ const IndexPage = data => (
     <BannerOption />
     
     <div className="container-fluid index_product pt-5">
-      <div className="text-center" data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-sine"><h2 className="with-underline2">Nos plats au top</h2></div>
+      <div className="text-center" data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-sine">
+        <h2 className="with-underline2">Notre histoire</h2>
+      </div>
       <IndexPost data={data}></IndexPost>
+      
     </div>
-    <LatestBlogs data={data.data.allContentfulBlogs}/>
-    <Countdown data={data.data.contentfulDealCountDown} />
+    {/* <LatestBlogs data={data.data.allContentfulBlogs}/> */}
+    {/* <Countdown data={data.data.contentfulDealCountDown} /> */}
   </Layout>
 )
 
