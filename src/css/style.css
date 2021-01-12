@@ -756,6 +756,20 @@ pre tt:after {
   text-align: center;
 }
 
+.product-main a {
+  background: #FF4438;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 3px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.product-main a:hover {
+  background: #00B05B;
+}
+
 .product_main_back h3 {
   font-family: 'chinese';
   font-size: 30px;

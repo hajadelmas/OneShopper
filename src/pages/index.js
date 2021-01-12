@@ -25,9 +25,8 @@ class IndexPost extends React.Component {
             <h3>2015 - Lancement de l'aventure</h3>
             <p>Reprehenderit ex pariatur sunt sunt occaecat anim et eiusmod Lorem labore officia qui pariatur pariatur. Nulla cillum dolor officia esse fugiat eiusmod in. Aliqua excepteur quis irure mollit. Labore magna reprehenderit id laboris do dolor velit dolor sit. Eu ad velit reprehenderit eiusmod ut esse nisi ea incididunt eu ullamco anim. Ullamco dolore anim incididunt sint ipsum ea in voluptate irure sit deserunt.</p>
             <br></br>
-            <h3>2017 - le début d'un belle histoire</h3>
-            <p>Reprehenderit ex pariatur sunt sunt occaecat anim et eiusmod Lorem labore officia qui pariatur pariatur. Nulla cillum dolor officia esse fugiat eiusmod in. Aliqua excepteur quis irure mollit. Labore magna reprehenderit id laboris do dolor velit dolor sit. Eu ad velit reprehenderit eiusmod ut esse nisi ea incididunt eu ullamco anim. Ullamco dolore anim incididunt sint ipsum ea in voluptate irure sit deserunt.</p>
           </div>
+          <Link to='/about'>En savoir plus</Link>
           
           {/* {data.data.allContentfulProduct.edges.map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id} data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-out-sine">
