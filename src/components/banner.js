@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
-import Img from "gatsby-image";
+
 import { Link } from "gatsby";
 import LogoBanner from '../images/logo-banner-white.png'
-import { Parallax } from 'react-parallax';
-import imgBackground from '../images/background-main.jpg'
+
 
 
 var settings = {

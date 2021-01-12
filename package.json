@@ -32,7 +32,6 @@
     "react-device-detect": "^1.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
-    "react-parallax": "^3.1.2",
     "react-responsive": "^8.2.0",
     "react-slick": "^0.24.0",
     "react-star-rating-component": "^1.4.1",
