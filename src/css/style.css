@@ -824,7 +824,7 @@ pre tt:after {
   text-transform: uppercase;
 }
 
-.product-details {}
+/* .product-details {} */
 
 .product-details .gatsby-image-wrapper {
   height: 500px;
@@ -913,9 +913,9 @@ header nav ul.navbar-nav li {
   color: #ce0a24;
 } */
 
-.nav-item:hover {
+.nav-link:hover {
   background-image: url('../images/back-title-nav.png');
-  background-size: cover;
+  background-size: contain;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -923,11 +923,11 @@ header nav ul.navbar-nav li {
   color: black;
   font-weight: 400;
   font-size: 25px;
+  margin-left: 50px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  /* color: #FF4438; */
-  /* border-bottom: 1px solid white; */
+  color: #FF4438;
 }
 
 /* header css */
@@ -1233,8 +1233,13 @@ span.price {
 } */
 
 .store-page {
-  margin-top: 110px;
-  margin-bottom: 110px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.store_contain .col{
+  padding: 0;
+  margin: 0;
 }
 
 .details-page .product-details {
@@ -1314,7 +1319,7 @@ span.price {
   text-shadow: 2px 2px 9px #000;
 }
 
-.countdown-section {}
+/* .countdown-section {} */
 
 .countdown-section:before {
   content: "";
@@ -1528,10 +1533,60 @@ ul.latest-blog li .inner a {
 } */
 
 .Contact-us {
-  margin-top: 110px;
+  margin-top: 50px;
+  /* overflow: hidden; */
 }
 
-.Contact-us form {}
+.cdc_row {
+  /* background-color: #FF4438; */
+}
+
+.contact_details_col {
+  /* background-color: #FF4438; */
+  padding-top: 20px;
+}
+
+/* .cdc_t_number {
+  font-family: 'chinese';
+  font-size: 150px;
+  padding: 0;
+}
+
+.cdc_t_adresse {
+  font-family: 'chinese';
+  font-size: 50px;
+}
+
+.cdc_t_plus {
+
+} */
+
+.contact_details {
+  margin-bottom: 20px;
+  padding: 0;
+}
+.contact_details h2{
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.contact_details h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.contact_details p{
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.contact_details span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* .Contact-us form {} */
 
 .Contact-us form input {
   width: 100%;
@@ -1756,7 +1811,7 @@ footer.site-footer ul {
 
 .svg1 {
   position: absolute;
-  top: -100px;
+  top: -99px;
   left: 0;
   width: 100%;
   height: 100px;

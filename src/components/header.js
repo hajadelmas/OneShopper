@@ -126,19 +126,19 @@ function Header () {
           </Row> */}
 
 
-        <Navbar bg="" expand="lg">
+        <Navbar bg="" expand="lg" className=''>
           <Navbar.Brand href="/" className='d-flex'>
                 <img
                     alt=""
                     src={logo}
-                    width="80"
-                    height="60"
-                    className=""
+                    width="100"
+                    height="80"
+                    className="m-2"
                 />
           </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="w-100 d-flex justify-content-around align-content-end">
+              <Nav className="w-100 d-flex justify-content-end">
                 <Nav.Item>
                   <Link to="/" className='nav-link'>Accueil</Link>
                 </Nav.Item>

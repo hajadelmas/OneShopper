@@ -50,36 +50,36 @@ class IndexPost extends React.Component {
 
     return (
       <React.Fragment>
-        <h1 className='text-center titlePage'>Découvrez notre carte !</h1>
-        <br />
+        {/* <h1 className='text-center titlePage'>Découvrez notre carte !</h1>
+        <br /> */}
 
-        <Container fluid>
-          <Row>
-            <Col md={6} sm={12}>
+        <Container fluid className='p-0 m-0 store_contain'>
+          <Row className=''>
+            <Col md={6} sm={12} className='p-0'>
               <img src={Menu1} alt='menu1' />
             </Col>
 
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} className='p-0'>
               <img src={Menu2} alt='menu2' />
             </Col>
           </Row>
 
           <Row>
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} className='p-0'>
               <img src={Menu3} alt='menu1' />
             </Col>
 
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} className='p-0'>
               <img src={Menu4} alt='menu2' />
             </Col>
           </Row>
 
           <Row>
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} className='p-0'>
               <img src={Menu5} alt='menu1' />
             </Col>
 
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} className='p-0'>
               <img src={Menu6} alt='menu2' />
             </Col>
           </Row>
