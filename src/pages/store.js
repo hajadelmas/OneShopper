@@ -1,54 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import StarRatingComponent from 'react-star-rating-component';
 import { graphql } from "gatsby";
+import { Container, Row, Col } from "react-bootstrap"
 
-import { Accordion, Card, Container, Row, Col } from "react-bootstrap"
 
-import Menu1 from '../images/01-Menuboard.jpg'
-import Menu2 from '../images/02-Menuboard.jpg'
-import Menu3 from '../images/03-Menuboard.jpg'
-import Menu4 from '../images/04-Menuboard.jpg'
-import Menu5 from '../images/05-Menuboard.jpg'
-import Menu6 from '../images/06-Menuboard.jpg'
+const IndexPage = ({data}) => (
 
-class IndexPost extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      NoOfPost: 6
-    };
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = () => {
-    var lastScrollY = window.pageYOffset + 1100;
-
-    if (lastScrollY > window.outerHeight) {
-      var count = this.state.NoOfPost + 3;
-      this.setState({
-        NoOfPost: count
-      });
-    }
-  };
-
-  render() {
-
-    const { data } = this.props;
-    const { NoOfPost } = this.state;
-
-    return (
+  <Layout>
+    <SEO title="Store" keywords={[`gatsby`, `store`, `react`]} />
+    <div className="container-fluid store-page">
       <React.Fragment>
         {/* <h1 className='text-center titlePage'>Découvrez notre carte !</h1>
         <br /> */}
@@ -56,204 +18,73 @@ class IndexPost extends React.Component {
         <Container fluid className='p-0 m-0 store_contain'>
           <Row className=''>
             <Col md={6} sm={12} className='p-0'>
-              <img src={Menu1} alt='menu1' />
+              {/* <img src={Menu1} alt='menu1' /> */}
+              <Img fluid={data.Menu1.childImageSharp.fluid} />
             </Col>
 
             <Col md={6} sm={12} className='p-0'>
-              <img src={Menu2} alt='menu2' />
-            </Col>
-          </Row>
-
-          <Row>
-            <Col md={6} sm={12} className='p-0'>
-              <img src={Menu3} alt='menu1' />
-            </Col>
-
-            <Col md={6} sm={12} className='p-0'>
-              <img src={Menu4} alt='menu2' />
+              <Img fluid={data.Menu2.childImageSharp.fluid} />
             </Col>
           </Row>
 
           <Row>
             <Col md={6} sm={12} className='p-0'>
-              <img src={Menu5} alt='menu1' />
+              <Img fluid={data.Menu3.childImageSharp.fluid} />
             </Col>
 
             <Col md={6} sm={12} className='p-0'>
-              <img src={Menu6} alt='menu2' />
+              <Img fluid={data.Menu4.childImageSharp.fluid} />
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={6} sm={12} className='p-0'>
+              <Img fluid={data.Menu5.childImageSharp.fluid} />
+            </Col>
+
+            <Col md={6} sm={12} className='p-0'>
+              <Img fluid={data.Menu6.childImageSharp.fluid} />
             </Col>
           </Row>
         </Container>
-
-        {/* <Accordion defaultActiveKey="0">
-          <Card>
-            <Accordion.Toggle as={Card.Header} className='carteStyle' eventKey="0">
-              Les plats
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
-                <div className="row product-main" onScroll={this.onScrollEvent}>
-                  {data.data.platTags.edges.slice(0, NoOfPost).map(items => (
-                    <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
-                      <div className="details_List">
-                        {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fixed} />}
-
-                        <div className="details_inner">
-                          <h2>
-                            <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
-                          </h2>
-                          <StarRatingComponent
-                            name="rate1"
-                            starCount={5}
-                            value={items.node.rating}
-                          />
-                          <p>{items.node.details.childMarkdownRemark.excerpt}</p>
-                          <div className="row">
-                            <div className="col-sm-4 align-self-center">
-                              <span className="indexPrice">{items.node.price} €</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} className='carteStyle' eventKey="1">
-              Les desserts
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="1">
-              <Card.Body>
-                <div className="row product-main" onScroll={this.onScrollEvent}>
-                    {data.data.dessertTags.edges.slice(0, NoOfPost).map(items => (
-                      <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
-                        <div className="details_List">
-                          {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fixed} />}
-
-                          <div className="details_inner">
-                            <h2>
-                              <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
-                            </h2>
-                            <StarRatingComponent
-                              name="rate1"
-                              starCount={5}
-                              value={items.node.rating}
-                            />
-                            <p>{items.node.details.childMarkdownRemark.excerpt}</p>
-                            <div className="row">
-                              <div className="col-sm-4 align-self-center">
-                                <span className="indexPrice">{items.node.price} €</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        </Accordion> */}
-
-
       </React.Fragment>
-    );
-  }
-}
-
-const IndexPage = data => (
-
-  <Layout>
-    <SEO title="Store" keywords={[`gatsby`, `store`, `react`]} />
-    <div className="container-fluid store-page">
-      <IndexPost data={data}></IndexPost>
     </div>
   </Layout>
 )
 
+
+
 export default IndexPage
 
-// export const query = graphql`
-//   query StoreQuery {
-//     allContentfulProduct(filter:{tags:{eq:"plat"}}) {
-//       edges{
-//         node{
-//           id
-//           name
-//           slug
-//           rating
-//           image {
-//             fixed(width: 1000, height: 500) {
-//               width
-//               height
-//               src
-//               srcSet
-//             }
-//           }
-//           price
-//           details {
-//             childMarkdownRemark {
-//               excerpt(pruneLength: 140)
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
-
-export const query = graphql`
-  query StoreQuery {
-    dessertTags: allContentfulProduct(filter:{tags:{eq:"dessert"}}) {
-      edges{
-        node{
-          id
-          name
-          slug
-          rating
-          image {
-            fixed(width: 1000, height: 500) {
-              width
-              height
-              src
-              srcSet
-            }
-          }
-          price
-          details {
-            childMarkdownRemark {
-              excerpt(pruneLength: 140)
-            }
-          }
-        }
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
       }
     }
-    platTags: allContentfulProduct(filter:{tags:{eq:"plat"}}) {
-      edges{
-        node{
-          id
-          name
-          slug
-          rating
-          image {
-            fixed(width: 1000, height: 500) {
-              width
-              height
-              src
-              srcSet
-            }
-          }
-          price
-          details {
-            childMarkdownRemark {
-              excerpt(pruneLength: 140)
-            }
-          }
-        }
-      }
+  }
+`
+
+export const query = graphql`
+  query {
+    Menu1: file(relativePath: { eq: "01-Menuboard.jpg" }) {
+      ...fluidImage
+    }
+    Menu2: file(relativePath: { eq: "02-Menuboard.jpg" }) {
+      ...fluidImage
+    }
+    Menu3: file(relativePath: { eq: "03-Menuboard.jpg" }) {
+      ...fluidImage
+    }
+    Menu4: file(relativePath: { eq: "04-Menuboard.jpg" }) {
+      ...fluidImage
+    }
+    Menu5: file(relativePath: { eq: "05-Menuboard.jpg" }) {
+      ...fluidImage
+    }
+    Menu6: file(relativePath: { eq: "06-Menuboard.jpg" }) {
+      ...fluidImage
     }
   }
 `
