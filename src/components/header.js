@@ -57,9 +57,9 @@ function Header () {
                         {/* <Nav.Item>
                           <Link to="/restaurants" className='nav-link'>Restaurants</Link>
                         </Nav.Item> */}
-                        <Nav.Item>
+                        {/* <Nav.Item>
                           <Link to="/about" className='nav-link'>A propos</Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
                         <Nav.Item>
                           <Link to="/contact-us" className='nav-link'>Contact</Link>
                         </Nav.Item>
@@ -151,9 +151,9 @@ function Header () {
                 {/* <Nav.Item>
                   <Link to="/restaurants" className='nav-link'>Restaurants</Link>
                 </Nav.Item> */}
-                <Nav.Item>
+                {/* <Nav.Item>
                   <Link to="/about" className='nav-link'>A propos</Link>
-                </Nav.Item>
+                </Nav.Item> */}
                 <Nav.Item>
                   <Link to="/contact-us" className='nav-link'>Contact</Link>
                 </Nav.Item>
