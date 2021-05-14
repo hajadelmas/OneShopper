@@ -22,7 +22,7 @@ export default class BannerOption extends Component {
                         <h2>Nos restaurants</h2>
                         <div className='bannerOptionGeneral_carre'>
                             <p>Nos restaurants et franchises sont à découvrir en cliquant sur le bouton ci-dessous. </p>
-                            <Link to='/restaurants'>Nos restaurants</Link>
+                            <Link to='/Click'>Nos restaurants</Link>
                         </div>
                     </div>
                     <div className="col-lg-3 col-sm-12 col-md-6 bannerOptionGeneral" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-sine">

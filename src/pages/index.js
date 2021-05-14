@@ -22,8 +22,8 @@ class IndexPost extends React.Component {
       <React.Fragment>
         <div className="row product-main">
           <div className='product_main_back'>
-            <h3>2015 - Lancement de l'aventure</h3>
-            <p>Reprehenderit ex pariatur sunt sunt occaecat anim et eiusmod Lorem labore officia qui pariatur pariatur. Nulla cillum dolor officia esse fugiat eiusmod in. Aliqua excepteur quis irure mollit. Labore magna reprehenderit id laboris do dolor velit dolor sit. Eu ad velit reprehenderit eiusmod ut esse nisi ea incididunt eu ullamco anim. Ullamco dolore anim incididunt sint ipsum ea in voluptate irure sit deserunt.</p>
+            {/* <h3>2015 - Lancement de l'aventure</h3> */}
+            <p>L'authentique poulet grillé au goût unique (Sauce Secrète), Venez déguster nos Grillades à la braise (Poulet, Viande, Poisson) dans un cadre chaleureux et familial. Générosité, prix et qualité des viandes sont au menu chez LE CHURRASCO !</p>
             <br></br>
           </div>
           <Link to='/contact-us'>Nous contacter</Link>
@@ -67,7 +67,7 @@ const IndexPage = data => (
     
     <div className="container-fluid index_product pt-5">
       <div className="text-center" data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-sine">
-        <h2 className="with-underline2">Notre histoire</h2>
+        <h2 className="with-underline2">LE Churrasco</h2>
       </div>
       <IndexPost data={data}></IndexPost>
       

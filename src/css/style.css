@@ -1116,6 +1116,7 @@ span.price {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
+  object-fit: cover;
 }
 
 .site-Banner {
@@ -1888,9 +1889,9 @@ footer.site-footer ul {
 
 /* Site-Click */
 
-.site-click {
-  margin-top: 110px;
-}
+
+
+
 
 /* Site-Click */
 
@@ -1918,6 +1919,50 @@ footer.site-footer ul {
 .banner_green {
   padding: 4px;
 }
+
+/* -------------------- Click page ---------------------- */
+
+.site-click {
+  margin-top: 110px;
+}
+
+.site-click h1 {
+  text-align: center;
+  font-family: "chinese", "barlow";
+}
+
+.click_contain {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button_click {
+  font-weight: 900;
+  color: #fff;
+  background-color: #FF4438;
+  padding: 1.5em;
+  border-radius: 3px;
+  margin-bottom: 2em;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button_click a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button_click:hover {
+  transform:translateY(-10%);
+}
+
+
+
 
 
 /* --------------------------------------- Media Css ---------------------------------------------- */
