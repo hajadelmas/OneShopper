@@ -1119,6 +1119,13 @@ span.price {
   object-fit: cover!important;
 }
 
+@media (max-width:767px) {
+  .parallax-perso {
+    background-image: url('../images/wings2.jpg');
+  }
+  
+}
+
 .site-Banner {
   width: 100%;
   position: relative;
