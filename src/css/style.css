@@ -1114,9 +1114,9 @@ span.price {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover!important;
   max-width: 100%;
-  object-fit: cover;
+  object-fit: cover!important;
 }
 
 .site-Banner {
@@ -2083,6 +2083,7 @@ footer.site-footer ul {
 
   .navbar-light .navbar-nav .nav-link {
     color: black;
+    white-space: nowrap;
   }
 
   .header-cart {
