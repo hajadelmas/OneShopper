@@ -9,7 +9,7 @@ import { Container, Row, Col } from "react-bootstrap"
 const IndexPage = ({data}) => (
 
   <Layout>
-    <SEO title="Store" keywords={[`gatsby`, `store`, `react`]} />
+    <SEO title="La carte" keywords={[`carte`, `churrasco`]} />
     <div className="container-fluid store-page">
       <React.Fragment>
         {/* <h1 className='text-center titlePage'>Découvrez notre carte !</h1>

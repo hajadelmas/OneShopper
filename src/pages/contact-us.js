@@ -12,7 +12,7 @@ class Contact extends React.Component {
     render() {
         return (
             <Layout>
-                <SEO title="Contact Us" keywords={[`gatsby`, `Contact`, `react`]} />
+                <SEO title="Contact" keywords={[`churrasco`, `Contact`]} />
                 <div className="Contact-us">
                     <Container fluid>
                         <Row>

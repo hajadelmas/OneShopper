@@ -32,7 +32,7 @@ function Header () {
                   <img
                       alt=""
                       src={logo}
-                      width="70"
+                      width="75"
                       height="50"
                       className="m-0"
                   />
