@@ -1240,6 +1240,13 @@ span.price {
   max-width: 50%;
 } */
 
+.carteEnCreation {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .store-page {
   margin-top: 0px;
   margin-bottom: 0px;

@@ -16,9 +16,8 @@ const IndexPage = ({data}) => (
         <br /> */}
 
         <Container fluid className='p-0 m-0 store_contain'>
-          <Row className=''>
+          {/* <Row className=''>
             <Col md={6} sm={12} className='p-0'>
-              {/* <img src={Menu1} alt='menu1' /> */}
               <Img fluid={data.Menu1.childImageSharp.fluid} />
             </Col>
 
@@ -45,6 +44,9 @@ const IndexPage = ({data}) => (
             <Col md={6} sm={12} className='p-0'>
               <Img fluid={data.Menu6.childImageSharp.fluid} />
             </Col>
+          </Row> */}
+          <Row className='carteEnCreation'>
+            <h1>La carte est en cours de création.</h1>
           </Row>
         </Container>
       </React.Fragment>
