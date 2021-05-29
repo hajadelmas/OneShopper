@@ -16,38 +16,34 @@ const IndexPage = ({data}) => (
         <br /> */}
 
         <Container fluid className='p-0 m-0 store_contain'>
-          {/* <Row className=''>
-            <Col md={6} sm={12} className='p-0'>
+          
+          <Row>
+            <Col md={12} sm={12} className='p-0'>
               <Img fluid={data.Menu1.childImageSharp.fluid} />
             </Col>
-
-            <Col md={6} sm={12} className='p-0'>
+          </Row>
+          <Row>
+            <Col md={12} sm={12} className='p-0'>
               <Img fluid={data.Menu2.childImageSharp.fluid} />
             </Col>
           </Row>
-
           <Row>
-            <Col md={6} sm={12} className='p-0'>
+            <Col md={12} sm={12} className='p-0'>
               <Img fluid={data.Menu3.childImageSharp.fluid} />
             </Col>
-
+          </Row>
+          <Row>
             <Col md={6} sm={12} className='p-0'>
               <Img fluid={data.Menu4.childImageSharp.fluid} />
             </Col>
-          </Row>
-
-          <Row>
             <Col md={6} sm={12} className='p-0'>
               <Img fluid={data.Menu5.childImageSharp.fluid} />
             </Col>
-
-            <Col md={6} sm={12} className='p-0'>
-              <Img fluid={data.Menu6.childImageSharp.fluid} />
-            </Col>
-          </Row> */}
-          <Row className='carteEnCreation'>
-            <h1>La carte est en cours de création.</h1>
           </Row>
+
+          {/* <Row className='carteEnCreation'>
+            <h1>La carte est en cours de création.</h1>
+          </Row> */}
         </Container>
       </React.Fragment>
     </div>
@@ -70,22 +66,19 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query {
-    Menu1: file(relativePath: { eq: "01-Menuboard.jpg" }) {
+    Menu1: file(relativePath: { eq: "menu1.jpg" }) {
       ...fluidImage
     }
-    Menu2: file(relativePath: { eq: "02-Menuboard.jpg" }) {
+    Menu2: file(relativePath: { eq: "menu2.jpg" }) {
       ...fluidImage
     }
-    Menu3: file(relativePath: { eq: "03-Menuboard.jpg" }) {
+    Menu3: file(relativePath: { eq: "menu3.jpg" }) {
       ...fluidImage
     }
-    Menu4: file(relativePath: { eq: "04-Menuboard.jpg" }) {
+    Menu4: file(relativePath: { eq: "boisson1.jpg" }) {
       ...fluidImage
     }
-    Menu5: file(relativePath: { eq: "05-Menuboard.jpg" }) {
-      ...fluidImage
-    }
-    Menu6: file(relativePath: { eq: "06-Menuboard.jpg" }) {
+    Menu5: file(relativePath: { eq: "boisson2.jpg" }) {
       ...fluidImage
     }
   }
